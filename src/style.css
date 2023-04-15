@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Gotham Bold';
+    src: url('./fonts/Gotham Bold.otf') format('opentype');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Gotham Bold', sans-serif;
+}
+
+/* Apply the Holy Grail layout using Flexbox */
+#content {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    flex-direction: column;
+    min-height: 100%;
+}
+
+#header1,
+#header2,
+#container,
+#footer {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+}
+
+#header1,
+#header2,
+#container {
+    flex-basis: calc(50% - 20px);
+    margin-bottom: 0;
+}
+
+#header1 {
+    background-color: #7B3F00;
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 30px;
+    text-align: center;
+}
+
+#header2 {
+    display: flex;
+    justify-content: space-around;
+    background-color: #A66A00;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+#container {
+    background-color: #F6E3CE;
+    padding: 10px;
+    flex-grow: 1;
+    background-image: url('./images/homePic.jpg')
+}
+
+#container h1 {
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#container p {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #F8D1AC;
+    border: 1px solid #E69B5C;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+#footer {
+    background-color: #7B3F00;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+}
+
+button {
+    background-color: #7B3F00;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    margin: 40px;
+}
